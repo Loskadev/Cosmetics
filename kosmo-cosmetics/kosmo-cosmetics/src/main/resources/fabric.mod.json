@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "kosmo",
+	"version": "${version}",
+	"name": "Косметика",
+	"description": "Меню косметики на правый Shift: рога, корона, плащи, крылья, питомцы на плече и скины для меча.",
+	"authors": ["Автор"],
+	"license": "All-Rights-Reserved",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.kosmo.KosmoClient"]
+	},
+	"mixins": [
+		{
+			"config": "kosmo.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
